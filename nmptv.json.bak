@@ -1,0 +1,254 @@
+{
+  "channel_name": "NMP Television",
+  "base_url": "B:/Video/Film & TV/",
+  "template": [
+    {
+      "start": "10:00",
+      "list": [
+        "top_gear"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "11:00",
+      "list": [
+        "open_all_hours"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "11:30",
+      "list": [
+        "dads_army"
+      ],
+      "index": [
+        0,
+        4
+      ],
+      "movement": 2
+    },
+    {
+      "start": "12:00",
+      "list": [
+        "dads_army"
+      ],
+      "index": [
+        0,
+        5
+      ],
+      "movement": 2
+    },
+    {
+      "start": "12:30",
+      "list": [
+        "porridge"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "13:00",
+      "list": [
+        "yes_minister"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "13:30",
+      "list": [
+        "blackadder"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "14:00",
+      "list": [
+        "keeping_up_appearances"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "14:30",
+      "list": [
+        "father_ted"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "15:00",
+      "list": [
+        "some_mothers_do_ave_em",
+        "fawlty_towers"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "15:30",
+      "list": [
+        "top_gear"
+      ],
+      "index": [
+        0,
+        4
+      ],
+      "movement": 1
+    },
+    {
+      "start": "16:30",
+      "list": [
+        "open_all_hours"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "17:00",
+      "list": [
+        "dads_army"
+      ],
+      "index": [
+        0,
+        4
+      ],
+      "movement": 2
+    },
+    {
+      "start": "17:30",
+      "list": [
+        "dads_army"
+      ],
+      "index": [
+        0,
+        5
+      ],
+      "movement": 2
+    },
+    {
+      "start": "18:00",
+      "list": [
+        "porridge"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "18:30",
+      "list": [
+        "yes_minister"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "19:00",
+      "list": [
+        "blackadder"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "19:30",
+      "list": [
+        "keeping_up_appearances"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "20:00",
+      "list": [
+        "father_ted"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "20:30",
+      "list": [
+        "some_mothers_do_ave_em",
+        "fawlty_towers"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    },
+    {
+      "start": "21:00",
+      "list": [
+        "top_gear"
+      ],
+      "index": [
+        0,
+        5
+      ],
+      "movement": 1
+    },
+    {
+      "start": "22:00",
+      "list": [
+        "a_touch_of_frost",
+        "blue_lights",
+        "hatton_garden",
+        "murder_in_the_badlands",
+        "54_days"
+      ],
+      "index": [
+        0,
+        3
+      ],
+      "movement": 1
+    }
+  ]
+}

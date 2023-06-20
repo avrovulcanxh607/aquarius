@@ -1,0 +1,667 @@
+[
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Entertainment/Top Gear/Series 1/Top Gear, Series 1, Episode 4-p00yzqpk_delogoed.mp4"
+  },
+  {
+    "time": 1687251600.0,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687255133.06,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687255168.06,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Open All Hours/Series 2/BBCDVD1190_Title7.mp4"
+  },
+  {
+    "time": 1687255183.06,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687256916.34,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687256981.34,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Dad's Army/Series 2/E1 - Operation Kilt.mp4"
+  },
+  {
+    "time": 1687256996.34,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687258787.22,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Dad's Army/Series 2/E2 - The Battle Of Godfrey's Cottage.mp4"
+  },
+  {
+    "time": 1687258792.22,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687260609.3,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Porridge/PORRIDGE_Title6.mp4"
+  },
+  {
+    "time": 1687260614.3,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687262459.38,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Yes Minister/Series 1/S1, E5 - The Writing on the Wall.mp4"
+  },
+  {
+    "time": 1687262464.38,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687264124.78,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687264159.78,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Blackadder/Series 1/BLACKADDER_Title6.mp4"
+  },
+  {
+    "time": 1687264174.78,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687265982.66,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Keeping Up Appearances/Series 1/E5 - Daisy's Toyboy.mp4"
+  },
+  {
+    "time": 1687266002.66,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687267713.58,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687267778.58,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Father Ted/Series 1/E5 - And God Created Woman.mp4"
+  },
+  {
+    "time": 1687267793.58,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687269301.58,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687269576.58,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Some Mothers Do ave em/E5 - The Hospital Visit.mp4"
+  },
+  {
+    "time": 1687269591.58,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687271393.58,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Entertainment/Top Gear/Series 1/Top Gear, Series 1, Episode 5-p00yzskr_delogoed.mp4"
+  },
+  {
+    "time": 1687271398.58,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687274949.64,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687274984.64,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Open All Hours/Series 2/BBCDVD1190_Title7.mp4"
+  },
+  {
+    "time": 1687274999.64,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687276732.92,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687276767.92,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Dad's Army/Series 2/E1 - Operation Kilt.mp4"
+  },
+  {
+    "time": 1687276782.92,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687278573.8,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Dad's Army/Series 2/E2 - The Battle Of Godfrey's Cottage.mp4"
+  },
+  {
+    "time": 1687278593.8,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687280410.88,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Porridge/PORRIDGE_Title6.mp4"
+  },
+  {
+    "time": 1687280415.88,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687282260.96,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Yes Minister/Series 1/S1, E5 - The Writing on the Wall.mp4"
+  },
+  {
+    "time": 1687282265.96,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687283926.36,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687283961.36,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Blackadder/Series 1/BLACKADDER_Title6.mp4"
+  },
+  {
+    "time": 1687283976.36,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687285784.24,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Keeping Up Appearances/Series 1/E5 - Daisy's Toyboy.mp4"
+  },
+  {
+    "time": 1687285804.24,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687287515.16,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687287580.16,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Father Ted/Series 1/E5 - And God Created Woman.mp4"
+  },
+  {
+    "time": 1687287595.16,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687289103.16,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687289378.16,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Comedy/Some Mothers Do ave em/E5 - The Hospital Visit.mp4"
+  },
+  {
+    "time": 1687289393.16,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Clock"
+  },
+  {
+    "time": 1687291195.16,
+    "command": "PROGRAM",
+    "scene": "Clock"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Entertainment/Top Gear/Series 1/Top Gear, Series 1, Episode 6-p00yzt3n_delogoed.mp4"
+  },
+  {
+    "time": 1687291200.16,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 1687294736.22,
+    "command": "PROGRAM",
+    "scene": "Breakfiller"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687294771.22,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 0,
+    "command": "PREVIEW",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 0,
+    "command": "LOAD",
+    "url": "B:/Video/Film & TV/Drama/A Touch Of Frost/ITVHub/Series 2/A Touch of Frost - Widows and Orphans [Ya1774a0005].mp4"
+  },
+  {
+    "time": 1687294786.22,
+    "command": "PROGRAM",
+    "scene": "Playout 1"
+  },
+  {
+    "time": 1687300814.22,
+    "command": "PROGRAM",
+    "scene": "Ident"
+  },
+  {
+    "time": 1687300839.22,
+    "command": "PROGRAM",
+    "scene": "Ceefax Caption"
+  },
+  {
+    "time": 1687300844.22,
+    "command": "PROGRAM",
+    "scene": "Ceefax Feed"
+  }
+]
