@@ -2,8 +2,8 @@ import json
 from os import listdir
 from os.path import isfile, join
 
-base_url = "B:/Video/Film & TV/"
-directory_url = "Films/TVSafe"
+base_url = "A:/Video/Film & TV/"
+directory_url = "Documentary/Once Upon A Time/Northern Ireland"
 
 output = []
 

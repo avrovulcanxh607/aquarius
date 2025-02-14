@@ -1,20 +1,36 @@
-[
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title10.mp4"
-  },
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title12.mp4"
-  },
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title2.mp4"
-  },
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title4.mp4"
-  },
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title6.mp4"
-  },
-  {
-    "url": "Comedy/Porridge/PORRIDGE_Title8.mp4"
-  }
-]
+{
+  "title": "Porridge",
+  "description": "Classic comedy series about the inmates of HM Prison Slade, starring Ronnie Barker.",
+  "episodes": [
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title10.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1715.88
+    },
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title12.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1732.68
+    },
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title2.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1726.8
+    },
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title4.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1728.68
+    },
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title6.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1845.08
+    },
+    {
+      "url": "Comedy/Porridge/PORRIDGE_Title8.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1765.48
+    }
+  ]
+}

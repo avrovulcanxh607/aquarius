@@ -1,4 +1,7 @@
-import sched, time, json
+import sched, time, json, socket
+
+from datetime import datetime
+
 from obswebsocket import obsws, requests
 
 def json_load(uri):
@@ -18,6 +21,22 @@ def json_load(uri):
 	
 	return data
 
+def prepare_VT(client,source_name,file_uri):
+	# Load File Into VT
+	client.call(requests.SetInputSettings(inputName=source_name, inputSettings={"local_file":file_uri}))
+	client.call(requests.TriggerMediaInputAction(inputName=source_name, mediaAction="OBS_WEBSOCKET_MEDIA_INPUT_ACTION_STOP"))	# Hit Stop
+
+	time.sleep(1)	# Wait for file to load
+
+	client.call(requests.TriggerMediaInputAction(inputName=source_name, mediaAction="OBS_WEBSOCKET_MEDIA_INPUT_ACTION_RESTART"))	# Force load
+
+	time.sleep(1)	# Wait for file to play
+
+	client.call(requests.SetMediaInputCursor(inputName=source_name, mediaCursor=5000))	# Jump to T+05
+	client.call(requests.TriggerMediaInputAction(inputName=source_name, mediaAction="OBS_WEBSOCKET_MEDIA_INPUT_ACTION_PAUSE"))	# Hold at T+05
+
+	media_state = client.call(requests.GetMediaInputStatus(inputName=source_name)).getMediaState()	# Check there's no error state here in future
+
 def execute(command,client):
 	print(command)
 	
@@ -26,7 +45,7 @@ def execute(command,client):
 	elif command["command"] == "PREVIEW":
 		client.call(requests.SetCurrentPreviewScene(sceneName=command["scene"]))
 	elif command["command"] == "LOAD":
-		client.call(requests.SetInputSettings(inputName="VT 1", inputSettings={"local_file":command["url"]}))
+		prepare_VT(client,"VT 1",command["url"])
 
 client = obsws("localhost", 4455, "ot47W7Di9SU72Vvl")
 client.connect()
@@ -64,6 +83,7 @@ print(time.time())
 while True:
 	command_sched.run(blocking=False)
 	time.sleep(1)
+	
 	print(time.time())
 	print(command_sched.queue[0].time)
 	print(command_sched.queue[0].time - time.time())

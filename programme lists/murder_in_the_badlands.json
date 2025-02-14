@@ -1,0 +1,42 @@
+{
+  "title": "Murder in the Badlands",
+  "description": "Series examining the stories behind the unsolved murders of four women across four decades in Northern Ireland.",
+  "episodes": [
+    {
+      "url": "Documentary/Murder in the Badlands/Murder in the Badlands, Series 1, The Murder of Lisa Dorrian-m0015j49_delogoed.mp4",
+      "series": 1,
+      "episode": 1,
+      "title": "The Murder of Lisa Dorian",
+      "description": "The inside story of the disappearance and murder of Lisa Dorian in 2005.",
+      "start_seconds": 0,
+      "end_seconds": 3526.04
+    },
+    {
+      "url": "Documentary/Murder in the Badlands/Murder in the Badlands, Series 1, Episode 4-m001673t_delogoed.mp4",
+      "series": 1,
+      "episode": 4,
+      "title": "The Murder of Marian Beattie",
+      "description": "The inside story of the murder or Portadown teenager Marian Beattie.",
+      "start_seconds": 0,
+      "end_seconds": 3513.04
+    },
+    {
+      "url": "Documentary/Murder in the Badlands/Murder in the Badlands, Series 1, The Murder of Arlene Arkinson-m0016064_delogoed.mp4",
+      "series": 1,
+      "episode": 3,
+      "title": "The Murder of Arlene Arkinson",
+      "description": "The inside story of the murder of 15-year-old Arlene Arkinson.",
+      "start_seconds": 0,
+      "end_seconds": 3540.04
+    },
+    {
+      "url": "Documentary/Murder in the Badlands/Murder in the Badlands, Series 1, The Murder of Inga Maria Hauser-m0016bjw_delogoed.mp4",
+      "series": 1,
+      "episode": 1,
+      "title": "The Murder of Inga Maria Hauser",
+      "description": "The unsolved murder of German backpacker Inga Maria Hauser.",
+      "start_seconds": 0,
+      "end_seconds": 3536.04
+    }
+  ]
+}

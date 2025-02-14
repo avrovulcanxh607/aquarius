@@ -1,14 +1,26 @@
-[
-  {
-    "url": "Drama/Hatton Garden/Hatton Garden - Episode 1.mp4"
-  },
-  {
-    "url": "Drama/Hatton Garden/Hatton Garden - Episode 2.mp4"
-  },
-  {
-    "url": "Drama/Hatton Garden/Hatton Garden - Episode 3.mp4"
-  },
-  {
-    "url": "Drama/Hatton Garden/Hatton Garden - Episode 4.mp4"
-  }
-]
+{
+  "title": "Hatton Garden",
+  "description": "A factual drama about the Hatton Garden Diamond Heist starring Timothy Spall.",
+  "episodes": [
+    {
+      "url": "Drama/Hatton Garden/Hatton Garden - Episode 1.mp4",
+      "start_seconds": 0,
+      "end_seconds": 2827.520011
+    },
+    {
+      "url": "Drama/Hatton Garden/Hatton Garden - Episode 2.mp4",
+      "start_seconds": 0,
+      "end_seconds": 2674.000011
+    },
+    {
+      "url": "Drama/Hatton Garden/Hatton Garden - Episode 3.mp4",
+      "start_seconds": 0,
+      "end_seconds": 2791.160011
+    },
+    {
+      "url": "Drama/Hatton Garden/Hatton Garden - Episode 4.mp4",
+      "start_seconds": 0,
+      "end_seconds": 2800.240011
+    }
+  ]
+}

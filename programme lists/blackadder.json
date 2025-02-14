@@ -1,98 +1,42 @@
-[
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title2.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title3.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title4.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title5.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title6.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 1/BLACKADDER_Title7.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title2.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title3.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title4.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title5.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title6.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 2/BLACK_ADDER_II_Title7.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title2.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title3.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title4.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title5.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title6.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 3/BLACK_ADDER_III_Title7.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E1 - Captain Cook.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E2 - Corporal Punishment.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E3 - Major Star.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E4 - Private Plane.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E5 - General Hospital.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Blackadder/Series 4/E6 - Goodbyeee.mp4",
-    "series": "Series 4"
-  }
-]
+{
+  "title": "Blackadder Goes Forth",
+  "description": "Rowan Atkinson stars as Captain Blackadder in Richard Curtis' and Ben Elton's award-winning comedy.",
+  "episodes": [
+    {
+      "url": "Comedy/Blackadder/Series 4/E1 - Captain Cook.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1756.0
+    },
+    {
+      "url": "Comedy/Blackadder/Series 4/E2 - Corporal Punishment.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1766.96
+    },
+    {
+      "url": "Comedy/Blackadder/Series 4/E3 - Major Star.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1747.28
+    },
+    {
+      "url": "Comedy/Blackadder/Series 4/E4 - Private Plane.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1740.0
+    },
+    {
+      "url": "Comedy/Blackadder/Series 4/E5 - General Hospital.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1687.0
+    },
+    {
+      "url": "Comedy/Blackadder/Series 4/E6 - Goodbyeee.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1766.0
+    }
+  ]
+}

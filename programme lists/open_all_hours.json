@@ -1,54 +1,84 @@
-[
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title3.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title4.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title5.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title6.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title7.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title8.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title9.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title3.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title4.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title5.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title6.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title7.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title8.mp4",
-    "series": "Series 3"
-  }
-]
+{
+  "title": "Open All Hours",
+  "description": "Classic shop sitcom about miserly shopkeeper Arkwright and his downtrodden nephew and assistant, Granville.",
+  "episodes": [
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title3.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1805.88
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title4.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1767.16
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title5.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1764.56
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title6.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1822.4
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title7.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1733.28
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title8.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1802.08
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 2/BBCDVD1190_Title9.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1841.08
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title3.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1823.88
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title4.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1752.08
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title5.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1759.08
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title6.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1807.88
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title7.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1838.08
+    },
+    {
+      "url": "Comedy/Open All Hours/Series 3/BBCDVD1366_Title8.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1767.08
+    }
+  ]
+}

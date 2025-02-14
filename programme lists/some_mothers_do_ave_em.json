@@ -1,23 +1,41 @@
-[
-  {
-    "url": "Comedy/Some Mothers Do ave em/E1 - The Job Interview.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E2 - George's House.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E3 - Love Thy Neighbour.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E4 - Have A Break, Take A Husband.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E5 - The Hospital Visit.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E6 - The Pshychiatrist.mp4"
-  },
-  {
-    "url": "Comedy/Some Mothers Do ave em/E7 - The Employment Exchange.mp4"
-  }
-]
+{
+  "title": "Some Mothers Do 'ave 'em",
+  "description": "Accident-prone Frank Spencer fails to navigate the simplest tasks of daily life, while also trying to look after his wife and baby.",
+  "episodes": [
+    {
+      "url": "Comedy/Some Mothers Do ave em/E1 - The Job Interview.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1725.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E2 - George's House.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1476.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E3 - Love Thy Neighbour.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1794.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E4 - Have A Break, Take A Husband.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1708.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E5 - The Hospital Visit.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1802.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E6 - The Pshychiatrist.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1776.0
+    },
+    {
+      "url": "Comedy/Some Mothers Do ave em/E7 - The Employment Exchange.mp4",
+      "start_seconds": 0,
+      "end_seconds": 1811.0
+    }
+  ]
+}

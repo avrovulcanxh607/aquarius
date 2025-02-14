@@ -1,0 +1,51 @@
+{
+  "title": "Once Upon A Time in Northern Ireland",
+  "description": "25 years on from the end of the Troubles, those who lived through it share intimate, unheard testimonies - and reflect on its legacy.",
+  "episodes": [
+    {
+      "url": "Documentary/Once Upon A Time/Northern Ireland/1. Once Upon a Time in Northern Ireland, Series 1, It Wasn\u2019t Like a Movie Anymore [p0ff7cry].mp4",
+      "series": 1,
+      "episode": 1,
+      "title": "It Wasn't Like A Movie Anymore",
+      "description": "When tensions between Protestants and Catholics explode, the British Army is deployed.",
+      "start_seconds": 0,
+      "end_seconds": 4509.04
+    },
+    {
+      "url": "Documentary/Once Upon A Time/Northern Ireland/2. Once Upon a Time in Northern Ireland, Series 1, Do Paramilitaries Lie Awake at Night\uff1f [p0fhvvky].mp4",
+      "series": 1,
+      "episode": 2,
+      "title": "Do Paramilitaries Lie Awake At Night?",
+      "description": "A deeply segregated society emerges as the violence escalates.",
+      "start_seconds": 0,
+      "end_seconds": 3720.04
+    },
+    {
+      "url": "Documentary/Once Upon A Time/Northern Ireland/3. Once Upon a Time in Northern Ireland, Series 1, So Many Broken Hearts [p0fsgkhk].mp4",
+      "series": 1,
+      "episode": 3,
+      "title": "So Many Broken Hearts",
+      "description": "The impact of the hunger strikes is seen through the eyes of three women.",
+      "start_seconds": 0,
+      "end_seconds": 3603.04
+    },
+    {
+      "url": "Documentary/Once Upon A Time/Northern Ireland/4. Once Upon a Time in Northern Ireland, Series 1, Loose Talk Costs Lives [p0fhvz1p].mp4",
+      "series": 1,
+      "episode": 4,
+      "title": "Loose Talk Costs Lives",
+      "description": "Tensions rise as the police and army infiltrate paramilitary organisations.",
+      "start_seconds": 0,
+      "end_seconds": 3723.04
+    },
+    {
+      "url": "Documentary/Once Upon A Time/Northern Ireland/5. Once Upon a Time in Northern Ireland, Series 1, Who Wants to Live Like That [p0fhvzbv].mp4",
+      "series": 1,
+      "episode": 5,
+      "title": "Who Wants to Live Like That?",
+      "description": "After decades of violence, a breakthrough is reached. But at what cost?",
+      "start_seconds": 0,
+      "end_seconds": 3941.04
+    }
+  ]
+}

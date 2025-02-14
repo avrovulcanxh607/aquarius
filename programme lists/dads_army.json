@@ -1,298 +1,450 @@
-[
-  {
-    "url": "Comedy/Dad's Army/Series 1/E1 - The Man And the Hour.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 1/E2 - Museum Piece.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 1/E3 - Command Decision.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 1/E4 - The Enemy Within The Gates.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 1/E5 - The Showing Up of Corporal Jones.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 1/E6 - Shooting Pains.mp4",
-    "series": "Series 1"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 2/E1 - Operation Kilt.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 2/E2 - The Battle Of Godfrey's Cottage.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 2/E3 - Sergeant Wilson's Little Secret.mp4",
-    "series": "Series 2"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E1 - The Armoured Might of Lance Corporal Jones.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E10 - Menace From The Deep.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E11 - Branded.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E12 - Man Hunt.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E13 - No Spring For Fraiser.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E14 - Sons Of The Sea.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E2 - Battle School.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E3 - The Lion Has Phones.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E4 - The Bullet Is Not For Firing.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E5 - Something Nasty In The Vault.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E6 - Room At The Bottom.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E7 - Big Guns.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E8 -The Day The Balloon Went Up.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 3/E9 - War Dance.mp4",
-    "series": "Series 3"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E1 - The Big Parade.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E10 - The Test.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E11 - A. Wilson (Manager).mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E12 - Uninvited Guests.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E13 - Fallen Idol.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E2 - Don't Forget The Diver.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E3 - Boots, Boots, Boots.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E4 - SGT - Save My Boy!.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E5 - Don't Fence Me In.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E6 - Absent Friends.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E7 - Put That Light out.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E8 - The Two and A Half Feathers.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 4/E9 - Mum's Army.mp4",
-    "series": "Series 4"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E1 - Asleep In The Deep.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E10 - Brain Versus Brawn.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E11 - A Brush With The Law.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E12 - Round And Round Went The Great Big Wheel.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E13 - Time On My Hands.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E2 - Keep Young And Beautiful.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E3 - Getting The Bird.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E4 - A Soldier's Farewell.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E5 - The Desperate Drive Of Corporal Jones.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E6 - If The Cap Fits.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E7 - The King Was In His Counting House.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E8 - All Is Safely Gathered In.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 5/E9 -When Did You Last See Your Money.mp4",
-    "series": "Series 5"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E1 - The Deadly Attachment.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E2 - My British Buddy.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E3 - The Royal Train.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E4 - We Know Our Onions.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E5 - The Honourable Man.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E6 - Things That Go Bump In The Night.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 6/E7 - The Recruit.mp4",
-    "series": "Series 6"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E1 - Everybody's Trucking.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E2 - A Man Of Action.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E3 - Gorillla Warfare.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E4 - The Godiva Affair.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E5 - The Captain's Car.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 7/E6 - Turkey Dinner.mp4",
-    "series": "Series 7"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E1 - Ring Dem Bells.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E2 - When You've Got To Go.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E3 - Is There Still Honey For Tea.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E4 - Come In, Your Time Is Up.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E5 - High Finance.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 8/E6 - The Face On The Poster.mp4",
-    "series": "Series 8"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E1 - Wake Up Walmington.mp4",
-    "series": "Series 9"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E2 - The Making Of Private Pike.mp4",
-    "series": "Series 9"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E3 - Knights of Madness.mp4",
-    "series": "Series 9"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E4 - The Miser's Hoard.mp4",
-    "series": "Series 9"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E5 - Number Engaged.mp4",
-    "series": "Series 9"
-  },
-  {
-    "url": "Comedy/Dad's Army/Series 9/E6 - Never Too Old.mp4",
-    "series": "Series 9"
-  }
-]
+{
+  "title": "Dad's Army",
+  "description": "Beloved sitcom about the struggles of a Home Guard platoon during World War II who are fighting incompetence, age and pomposity more than Nazis.",
+  "episodes": [
+    {
+      "url": "Comedy/Dad's Army/Series 1/E1 - The Man And the Hour.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1786.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 1/E2 - Museum Piece.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1795.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 1/E3 - Command Decision.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1783.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 1/E4 - The Enemy Within The Gates.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1795.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 1/E5 - The Showing Up of Corporal Jones.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1798.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 1/E6 - Shooting Pains.mp4",
+      "series": "Series 1",
+      "start_seconds": 0,
+      "end_seconds": 1781.04
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 2/E1 - Operation Kilt.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1790.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 2/E2 - The Battle Of Godfrey's Cottage.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1817.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 2/E3 - Sergeant Wilson's Little Secret.mp4",
+      "series": "Series 2",
+      "start_seconds": 0,
+      "end_seconds": 1767.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E1 - The Armoured Might of Lance Corporal Jones.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1729.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E10 - Menace From The Deep.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1777.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E11 - Branded.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1793.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E12 - Man Hunt.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1686.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E13 - No Spring For Fraiser.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1773.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E14 - Sons Of The Sea.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1770.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E2 - Battle School.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 545.64
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E3 - The Lion Has Phones.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1786.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E4 - The Bullet Is Not For Firing.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1769.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E5 - Something Nasty In The Vault.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1166.68
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E6 - Room At The Bottom.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1802.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E7 - Big Guns.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1772.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E8 -The Day The Balloon Went Up.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1661.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 3/E9 - War Dance.mp4",
+      "series": "Series 3",
+      "start_seconds": 0,
+      "end_seconds": 1800.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E1 - The Big Parade.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1776.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E10 - The Test.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1856.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E11 - A. Wilson (Manager).mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1749.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E12 - Uninvited Guests.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1775.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E13 - Fallen Idol.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 2048.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E2 - Don't Forget The Diver.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1796.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E3 - Boots, Boots, Boots.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1842.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E4 - SGT - Save My Boy!.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1797.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E5 - Don't Fence Me In.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1792.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E6 - Absent Friends.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1825.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E7 - Put That Light out.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1764.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E8 - The Two and A Half Feathers.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1823.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 4/E9 - Mum's Army.mp4",
+      "series": "Series 4",
+      "start_seconds": 0,
+      "end_seconds": 1820.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E1 - Asleep In The Deep.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1766.96
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E10 - Brain Versus Brawn.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1731.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E11 - A Brush With The Law.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1687.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E12 - Round And Round Went The Great Big Wheel.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1687.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E13 - Time On My Hands.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1719.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E2 - Keep Young And Beautiful.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1762.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E3 - Getting The Bird.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1762.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E4 - A Soldier's Farewell.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1661.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E5 - The Desperate Drive Of Corporal Jones.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1717.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E6 - If The Cap Fits.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1823.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E7 - The King Was In His Counting House.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1792.4
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E8 - All Is Safely Gathered In.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1773.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 5/E9 -When Did You Last See Your Money.mp4",
+      "series": "Series 5",
+      "start_seconds": 0,
+      "end_seconds": 1793.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E1 - The Deadly Attachment.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1765.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E2 - My British Buddy.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1785.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E3 - The Royal Train.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1679.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E4 - We Know Our Onions.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1826.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E5 - The Honourable Man.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1811.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E6 - Things That Go Bump In The Night.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1789.56
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 6/E7 - The Recruit.mp4",
+      "series": "Series 6",
+      "start_seconds": 0,
+      "end_seconds": 1725.04
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E1 - Everybody's Trucking.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1736.8
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E2 - A Man Of Action.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1784.84
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E3 - Gorillla Warfare.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1784.04
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E4 - The Godiva Affair.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1823.2
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E5 - The Captain's Car.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1757.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 7/E6 - Turkey Dinner.mp4",
+      "series": "Series 7",
+      "start_seconds": 0,
+      "end_seconds": 1791.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E1 - Ring Dem Bells.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1768.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E2 - When You've Got To Go.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1791.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E3 - Is There Still Honey For Tea.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1761.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E4 - Come In, Your Time Is Up.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1859.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E5 - High Finance.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1829.08
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 8/E6 - The Face On The Poster.mp4",
+      "series": "Series 8",
+      "start_seconds": 0,
+      "end_seconds": 1822.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E1 - Wake Up Walmington.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 1810.0
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E2 - The Making Of Private Pike.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 1874.96
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E3 - Knights of Madness.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 1863.4
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E4 - The Miser's Hoard.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 1800.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E5 - Number Engaged.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 1771.88
+    },
+    {
+      "url": "Comedy/Dad's Army/Series 9/E6 - Never Too Old.mp4",
+      "series": "Series 9",
+      "start_seconds": 0,
+      "end_seconds": 2120.88
+    }
+  ]
+}

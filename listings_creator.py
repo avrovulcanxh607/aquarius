@@ -1,4 +1,4 @@
-import json
+import json, requests
 from datetime import date, datetime, timedelta
 from ffprobe import FFProbe
 from math import trunc
@@ -57,8 +57,8 @@ for slot in data["template"]:
 		programme_list = json_load("programme lists/" + slot["list"][list_index] + ".json")
 		
 		if programme_list != False:
-			if len(programme_list) < (programme_index + slot["movement"]):
-				if len(slot["list"]) < (list_index + 1):
+			if len(programme_list["episodes"]) <= (programme_index + slot["movement"]):
+				if len(slot["list"]) <= (list_index + 1):
 					list_index = 0
 				else:
 					list_index += 1
@@ -67,11 +67,26 @@ for slot in data["template"]:
 			else:
 				programme_index += slot["movement"]
 				
-				selected_programme = {
-					"start":slot["start"],
-					"uri":data["base_url"] + programme_list[programme_index]["url"],
-					"duration":meta_lookup(data["base_url"] + programme_list[programme_index]["url"])["duration_seconds"]
-				}
+				try:
+					selected_programme = {
+						"start":slot["start"],
+						"uri":data["base_url"] + programme_list["episodes"][programme_index]["url"],
+						"duration":meta_lookup(data["base_url"] + programme_list["episodes"][programme_index]["url"])["duration_seconds"]
+					}
+				except Exception as e:
+					print(slot)
+					print(programme_list["episodes"][programme_index]["url"])
+					print(e)
+					continue
+				
+				if "description" in programme_list["episodes"][programme_index]:
+					selected_programme["description"] = programme_list["episodes"][programme_index]["description"]
+				else:
+					selected_programme["description"] = programme_list["description"]
+				
+				selected_programme["title"] = programme_list["title"]
+				selected_programme["start_seconds"] = datetime.timestamp(datetime.combine(datetime.now().date(), datetime.strptime(slot["start"],"%H:%M").time()))
+				
 		elif len(slot["list"]) > 1:
 			if len(slot["list"]) < (list_index + 1):
 				list_index = 0
@@ -99,7 +114,7 @@ previous_end_time = False
 
 command_output = []
 
-command_output.append({"time":0,"command":"PREVIEW","scene":"Playout 1"})
+command_output.append({"time":0,"command":"PREVIEW","scene":"Media 1"})
 command_output.append({"time":0,"command":"LOAD","url":filled_slots[0]["uri"]})
 #command_output.append({"time":,"command":"PREVIEW","scene":"Ceefax Caption"})
 #command_output.append({"time":,"command":"FADE_TO_BLACK","duration":600})
@@ -118,7 +133,7 @@ for slot_index,slot_info in enumerate(filled_slots):
 	print("Starts at " + str(programme_start_time))
 	print("Ends at " + str(programme_end_time))
 	
-	command_output.append({"time":datetime.timestamp(programme_start_time),"command":"PROGRAM","scene":"Playout 1"})
+	command_output.append({"time":datetime.timestamp(programme_start_time),"command":"PROGRAM","scene":"Media 1"})
 	
 	if previous_end_time != False:
 		print("Slip: " + str(datetime.combine(datetime.now().date(), datetime.strptime(slot_info["start"],"%H:%M").time()) - programme_start_time))
@@ -133,12 +148,12 @@ for slot_index,slot_info in enumerate(filled_slots):
 			print("Fill time with Ceefax")
 			command_output.append({"time":0,"command":"PREVIEW","scene":"Clock"})
 			command_output.append({"time":datetime.timestamp(programme_end_time),"command":"PROGRAM","scene":"Clock"})
-			command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Caption"})
-			command_output.append({"time":datetime.timestamp(programme_end_time)+5,"command":"PROGRAM","scene":"Ceefax Caption"})
-			command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Feed"})
-			command_output.append({"time":datetime.timestamp(programme_end_time)+10,"command":"PROGRAM","scene":"Ceefax Feed"})
-			command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Caption"})
-			command_output.append({"time":datetime.timestamp(previous_end_time)-25,"command":"PROGRAM","scene":"Ceefax Caption"})
+			#command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Caption"})
+			#command_output.append({"time":datetime.timestamp(programme_end_time)+5,"command":"PROGRAM","scene":"Ceefax Caption"})
+			command_output.append({"time":0,"command":"PREVIEW","scene":"OS 1"})
+			command_output.append({"time":datetime.timestamp(programme_end_time)+10,"command":"PROGRAM","scene":"OS 1"})
+			#command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Caption"})
+			#command_output.append({"time":datetime.timestamp(previous_end_time)-25,"command":"PROGRAM","scene":"Ceefax Caption"})
 			command_output.append({"time":0,"command":"PREVIEW","scene":"Ident"})
 			command_output.append({"time":datetime.timestamp(previous_end_time)-20,"command":"PROGRAM","scene":"Ident"})
 			previous_end_time = slot_end_time
@@ -161,15 +176,21 @@ for slot_index,slot_info in enumerate(filled_slots):
 			command_output.append({"time":0,"command":"PREVIEW","scene":"Clock"})
 			command_output.append({"time":datetime.timestamp(programme_end_time),"command":"PROGRAM","scene":"Clock"})
 	
-		command_output.append({"time":0,"command":"PREVIEW","scene":"Playout 1"})
+		command_output.append({"time":0,"command":"PREVIEW","scene":"Media 1"})
 		command_output.append({"time":0,"command":"LOAD","url":filled_slots[slot_index + 1]["uri"]})
 	
 	print("")
 
 command_output.append({"time":datetime.timestamp(programme_end_time),"command":"PROGRAM","scene":"Ident"})
-command_output.append({"time":datetime.timestamp(programme_end_time)+25,"command":"PROGRAM","scene":"Ceefax Caption"})
-command_output.append({"time":datetime.timestamp(programme_end_time)+30,"command":"PROGRAM","scene":"Ceefax Feed"})
+#command_output.append({"time":datetime.timestamp(programme_end_time)+25,"command":"PROGRAM","scene":"Ceefax Caption"})
+command_output.append({"time":datetime.timestamp(programme_end_time)+20,"command":"PROGRAM","scene":"OS 1"})
 
 f = open("command_output.json", "w")
 f.write(json.dumps(command_output, indent=2))
+f.close()
+
+filled_slots.append({"duration":43200,"start_seconds":999999999999,"title":"Pages From Ceefax","description":"Items of news and information from Ceefax, with music."})
+
+f = open("X://internal/textbulletin/nmptv_epg.json", "w")
+f.write(json.dumps(filled_slots, indent=2))
 f.close()

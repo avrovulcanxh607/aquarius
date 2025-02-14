@@ -1,0 +1,71 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&family=Rubik&family=Yantramanav&display=swap" rel="stylesheet">
+
+<style>
+	body {
+		font-family: 'Yantramanav', sans-serif;
+		background-color:#000;
+		color:#fff;
+	}
+	img {
+		width:80px;
+		height:auto;
+	}
+	table, th, td {
+		border: 2px solid white;
+		border-collapse: collapse;
+	}
+	td {
+		padding: 10px 20px;
+	}
+</style>
+
+<label for="appt">Choose a time for your meeting:</label>
+
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+
+<table>
+	<tr>
+		<th>Start Time</th>
+		<th>Source</th>
+		<th>Event Title</th>
+		<th>Transition</th>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" value="13:30" min="09:00" max="18:00" required /></td>
+		<td>Ident</td>
+		<td style="color:#00ff00;">CAR IDENT</td>
+		<td><img title="Down and Cut" alt="Down and Cut" src="icons/down_and_cut.png"></td>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></td>
+		<td>Local Media</td>
+		<td><b>KEEPING UP APPEARANCES</b></td>
+		<td><img title="Down and Cut" alt="Down and Cut" src="icons/down_and_cut.png"></td>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></td>
+		<td>Breakfiller</td>
+		<td style="color:#00ff00;">Breakfiller</td>
+		<td><img title="Down and Up" alt="Down and Up" src="icons/down_and_up.png"></td>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></td>
+		<td>Ident</td>
+		<td style="color:#00ff00;">CAR IDENT</td>
+		<td><img title="Down and Cut" alt="Down and Cut" src="icons/down_and_cut.png"></td>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></td>
+		<td>Caption</td>
+		<td style="color:#00ff00;">PAGES FROM CEEFAX CAPTION</td>
+		<td><img title="Crossfade" alt="Crossfade" src="icons/crossfade.png"></td>
+	</tr>
+	<tr>
+		<td><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></td>
+		<td>Outside Source</td>
+		<td><b>PAGES FROM CEEFAX</b></td>
+		<td><img title="Down and Up" alt="Down and Up" src="icons/down_and_up.png"></td>
+	</tr>
+</table>
