@@ -1,22 +1,22 @@
-import json, requests
+import json, requests, subprocess, re
 from datetime import date, datetime, timedelta
-from ffprobe import FFProbe
 from math import trunc
 
 def meta_lookup(uri):
 	try:
-		metadata=FFProbe(uri)
-	except:
-		print("Error loading '" + uri + "'")
+		# Use subprocess to call ffprobe directly
+		result = subprocess.run([
+			'ffprobe', '-v', 'quiet', '-print_format', 'json', '-show_format', uri
+		], capture_output=True, text=True, check=True)
+		
+		data = json.loads(result.stdout)
+		duration = float(data['format']['duration'])
+		
+		return {"duration_seconds": duration}
+		
+	except Exception as e:
+		print("Error loading '" + uri + "': " + str(e))
 		return False
-	
-	output = {}
-	
-	for stream in metadata.streams:
-		if stream.is_video():
-			output["duration_seconds"] = stream.duration_seconds()
-	
-	return output
 
 def json_load(uri):
 	try:
@@ -68,10 +68,16 @@ for slot in data["template"]:
 				programme_index += slot["movement"]
 				
 				try:
+					# Get metadata first and check if it's valid
+					metadata = meta_lookup(data["base_url"] + programme_list["episodes"][programme_index]["url"])
+					if metadata == False:
+						print(f"Skipping episode due to metadata error: {programme_list['episodes'][programme_index]['url']}")
+						continue
+					
 					selected_programme = {
 						"start":slot["start"],
 						"uri":data["base_url"] + programme_list["episodes"][programme_index]["url"],
-						"duration":meta_lookup(data["base_url"] + programme_list["episodes"][programme_index]["url"])["duration_seconds"]
+						"duration":metadata["duration_seconds"]
 					}
 				except Exception as e:
 					print(slot)
@@ -146,6 +152,7 @@ for slot_index,slot_info in enumerate(filled_slots):
 		
 		if fill_time > timedelta(seconds=400):
 			print("Fill time with Ceefax")
+			previous_end_time = slot_end_time
 			command_output.append({"time":0,"command":"PREVIEW","scene":"Clock"})
 			command_output.append({"time":datetime.timestamp(programme_end_time),"command":"PROGRAM","scene":"Clock"})
 			#command_output.append({"time":0,"command":"PREVIEW","scene":"Ceefax Caption"})
@@ -156,7 +163,6 @@ for slot_index,slot_info in enumerate(filled_slots):
 			#command_output.append({"time":datetime.timestamp(previous_end_time)-25,"command":"PROGRAM","scene":"Ceefax Caption"})
 			command_output.append({"time":0,"command":"PREVIEW","scene":"Ident"})
 			command_output.append({"time":datetime.timestamp(previous_end_time)-20,"command":"PROGRAM","scene":"Ident"})
-			previous_end_time = slot_end_time
 		elif fill_time > timedelta(seconds=50):
 			print("Fill time with Breakfiller")
 			print((trunc((fill_time.total_seconds() - 20)/30) * 30))
@@ -190,7 +196,3 @@ f.write(json.dumps(command_output, indent=2))
 f.close()
 
 filled_slots.append({"duration":43200,"start_seconds":999999999999,"title":"Pages From Ceefax","description":"Items of news and information from Ceefax, with music."})
-
-f = open("X://internal/textbulletin/nmptv_epg.json", "w")
-f.write(json.dumps(filled_slots, indent=2))
-f.close()
