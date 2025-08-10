@@ -46,7 +46,7 @@ pip install websocket-client
    - Go to `Tools` → `WebSocket Server Settings`
    - Enable `WebSocket server`
    - **Important**: Do NOT set a password - leave it blank
-   - Set the port to 4455
+   - Set the port to `4455`
 
 Your OBS scenes should look like this:
 ```
