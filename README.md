@@ -28,7 +28,7 @@ The system follows this workflow:
 
 ### Python Libraries
 ```bash
-pip install websocket-client
+pip install obs-websocket-py
 ```
 
 ### Knowledge Requirements
@@ -330,3 +330,4 @@ This advances 3 episodes total. Useful when you have the same show multiple time
 The system automatically updates the `index` values in `nmptv.json` to track progress through your shows. **Never modify these manually** - let the system handle episode progression.
 
 Remember: This is powerful but experimental software. Take time to understand how it works before running a full schedule!
+
