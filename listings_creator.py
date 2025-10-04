@@ -70,7 +70,7 @@ for slot in data["template"]:
 
         total_episodes = len(programme_list["episodes"])
         
-        # 🔥 NIEUW: Lees welke afleveringen al zijn afgespeeld
+        # NIEUW: Lees welke afleveringen al zijn afgespeeld
         saved_index = slot.get("index", [])
         played_episodes = set(saved_index) if isinstance(saved_index, list) else set()
         
@@ -121,14 +121,14 @@ for slot in data["template"]:
 
     filled_slots.append(selected_programme)
 
-    # ✅ Sla de lijst van afgespeelde afleveringen op
+    # Sla de lijst van afgespeelde afleveringen op
     slot["index"] = sorted(list(entry["played_episodes"]))
 
-# ✅ Wegschrijven van nieuwe indexen naar nmptv.json
+# Wegschrijven van nieuwe indexen naar nmptv.json
 with open("nmptv.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(data, indent=2))
 
-# 🎬 Playout-opbouw
+# Playout-opbouw
 previous_end_time = False
 command_output = []
 
