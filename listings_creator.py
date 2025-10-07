@@ -210,8 +210,8 @@ with open("command_output.json", "w", encoding="utf-8") as f:
 filled_slots.append({
     "duration": 43200,
     "start_seconds": 999999999999,
-    "title": "TestBeeld",
-    "description": "TestBeeld met muziek"
+    "title": "Pages from Ceefax",
+    "description": "Items of news and information from Ceefax, with music."
 })
 
 # EPG wegschrijven
