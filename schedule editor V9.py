@@ -1,4 +1,9 @@
-#Gemaakt door Max en Sep voor RTM/BMN
+
+     ##         ##############  #########
+    ##         ##    ##    ##  ##     ##
+   #########  ##    ##    ##  ##     ##
+  ##     ##  ##    ##    ##  ##     ##
+ #########  ##    ##    ##  ##     ##
 
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
