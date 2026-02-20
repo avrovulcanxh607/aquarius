@@ -155,6 +155,17 @@ This file controls what shows play when. Here's how it works:
 {
   "channel_name": "Your Channel Name",
   "base_url": "A:/Video/Film & TV/",
+  "christmas_schedule": {
+    "enabled": false,
+    "start": "12-24",
+    "end": "12-26",
+    "config": "nmptv_christmas.json"
+  },
+  "weekend_schedule": {
+    "enabled": false,
+    "days": ["Saturday", "Sunday"],
+    "config": "nmptv_weekend.json"
+  },
   "template": [
     {
       "start": "10:00",
@@ -176,8 +187,49 @@ This file controls what shows play when. Here's how it works:
 
 - **start**: What time the show starts (24-hour format)
 - **list**: Array of programme list names (can have multiple for rotation)
+- **scene**: Instead of `list`, you can specify an OBS scene name to switch to at this time (e.g. for a test card or live feed)
 - **index**: [list_index, episode_index] - tracks progress through episodes **DO NOT MODIFY MANUALLY - the system updates this automatically**
 - **movement**: How many episodes to advance total. If you have Top Gear 3 times in your schedule, set this to 3 so each slot gets a different episode instead of repeating the same one
+
+### Scene Slots
+
+Instead of playing a programme, you can switch to any OBS scene at a specific time:
+
+```json
+{
+  "start": "02:00",
+  "scene": ["NPO1"]
+}
+```
+
+This will switch OBS to the scene named `NPO1` at 02:00. Useful for live feeds, test cards, or anything else you have set up as an OBS scene. Scene slots are skipped in the EPG.
+
+### Alternative Schedules
+
+You can configure separate schedules for Christmas and weekends. When active, the system loads a different config file instead of `nmptv.json`.
+
+**Christmas schedule** — active between the dates you specify:
+```json
+"christmas_schedule": {
+  "enabled": true,
+  "start": "12-24",
+  "end": "12-26",
+  "config": "nmptv_christmas.json"
+}
+```
+
+**Weekend schedule** — active on the days you specify:
+```json
+"weekend_schedule": {
+  "enabled": true,
+  "days": ["Saturday", "Sunday"],
+  "config": "nmptv_weekend.json"
+}
+```
+
+You can use any days of the week: `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, `Saturday`, `Sunday`. Set `"enabled": false` to temporarily disable without removing the config.
+
+Christmas always takes priority over the weekend schedule. The config files (`nmptv_christmas.json`, `nmptv_weekend.json`) work exactly the same as `nmptv.json` — just copy it and change the template.
 
 ### Using the Schedule Editor
 
@@ -297,6 +349,8 @@ aquarius/
 │   ├── father_ted.json
 │   └── blackadder.json
 ├── nmptv.json
+├── nmptv_christmas.json    (optional)
+├── nmptv_weekend.json      (optional)
 ├── aquarius.py
 ├── listings_creator.py
 ├── episode_list_creator.py
@@ -330,5 +384,3 @@ This advances 3 episodes total. Useful when you have the same show multiple time
 The system automatically updates the `index` values in `nmptv.json` to track progress through your shows. **Never modify these manually** - let the system handle episode progression.
 
 Remember: This is powerful but experimental software. Take time to understand how it works before running a full schedule!
-
-
