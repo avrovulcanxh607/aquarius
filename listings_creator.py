@@ -47,10 +47,37 @@ def json_load(uri):
         print(f"Error loading '{uri}': {e}")
         return False
 
-data = json_load("nmptv.json")
+# Load base config and determine which schedule to use
+today = datetime.now()
+base_data = json_load("nmptv.json")
 
-# Backup maken
-with open("nmptv.json.bak", "w", encoding="utf-8") as f:
+config_file = "nmptv.json"
+
+# Check Christmas schedule
+christmas_config = base_data.get("christmas_schedule", {})
+if christmas_config.get("enabled", False):
+    try:
+        xmas_start = datetime.strptime(f"{today.year}-{christmas_config['start']}", "%Y-%m-%d").date()
+        xmas_end   = datetime.strptime(f"{today.year}-{christmas_config['end']}",   "%Y-%m-%d").date()
+        if xmas_start <= today.date() <= xmas_end:
+            config_file = christmas_config.get("config", "nmptv_christmas.json")
+            print("🎄 Christmas schedule active!")
+    except Exception as e:
+        print(f"WARNING: Could not parse Christmas dates: {e}")
+
+# Check weekend schedule (only if Christmas didn't already trigger)
+if config_file == "nmptv.json":
+    weekend_config = base_data.get("weekend_schedule", {})
+    if weekend_config.get("enabled", False):
+        day_name = today.strftime("%A")  # e.g. "Saturday"
+        if day_name in weekend_config.get("days", []):
+            config_file = weekend_config.get("config", "nmptv_weekend.json")
+            print(f"Weekend schedule active! ({day_name})")
+
+data = base_data if config_file == "nmptv.json" else json_load(config_file)
+
+# Backup
+with open(config_file + ".bak", "w", encoding="utf-8") as f:
     f.write(json.dumps(data, indent=2))
 
 print("Channel:", data["channel_name"])
@@ -59,9 +86,26 @@ filled_slots = []
 shuffled_episode_lists = defaultdict(list)
 
 for slot in data["template"]:
+
+    # Scene slot — switch directly to an OBS scene at this time
+    if "scene" in slot:
+        scene_name = slot["scene"][0]
+        slot_start_time = datetime.combine(today.date(), datetime.strptime(slot["start"], "%H:%M").time())
+        print(f"[SCENE SLOT] {slot['start']} -> '{scene_name}'")
+        filled_slots.append({
+            "start": slot["start"],
+            "scene": scene_name,
+            "duration": 0,
+            "title": scene_name,
+            "description": "",
+            "start_seconds": datetime.timestamp(slot_start_time),
+            "is_scene": True
+        })
+        continue
+
+    # Programme slot
     list_name = slot["list"][0]
 
-    # Laad lijst indien nog niet gedaan
     if not shuffled_episode_lists[list_name]:
         programme_list = json_load(f"programme lists/{list_name}.json")
         if not programme_list or "episodes" not in programme_list:
@@ -69,35 +113,27 @@ for slot in data["template"]:
             continue
 
         total_episodes = len(programme_list["episodes"])
-        
-        # NIEUW: Lees welke afleveringen al zijn afgespeeld
-        saved_index = slot.get("index", [])
-        played_episodes = set(saved_index) if isinstance(saved_index, list) else set()
-        
+        played_episodes = set(slot.get("index", [])) if isinstance(slot.get("index", []), list) else set()
+
         shuffled_episode_lists[list_name] = {
             "info": programme_list,
             "all_episodes": programme_list["episodes"][:],
             "played_episodes": played_episodes,
             "total": total_episodes
         }
-        
-        remaining = total_episodes - len(played_episodes)
-        print(f"[{list_name}] {remaining}/{total_episodes} episodes remaining")
+        print(f"[{list_name}] {total_episodes - len(played_episodes)}/{total_episodes} episodes remaining")
 
     entry = shuffled_episode_lists[list_name]
 
-    # Als alle afleveringen zijn afgespeeld, reset de lijst
     if len(entry["played_episodes"]) >= entry["total"]:
         print(f"[{list_name}] All episodes played! Resetting...")
         entry["played_episodes"].clear()
 
-    # Kies een random aflevering die nog niet is afgespeeld
     available_indices = [i for i in range(entry["total"]) if i not in entry["played_episodes"]]
-    
     if not available_indices:
         print(f"ERROR: No available episodes for {list_name}")
         continue
-    
+
     chosen_index = random.choice(available_indices)
     episode = entry["all_episodes"][chosen_index]
     entry["played_episodes"].add(chosen_index)
@@ -107,38 +143,48 @@ for slot in data["template"]:
         print(f"ERROR: Failed to get metadata for: {episode['url']}")
         continue
 
-    selected_programme = {
+    filled_slots.append({
         "start": slot["start"],
         "uri": data["base_url"] + episode["url"],
         "duration": metadata["duration_seconds"],
         "description": episode.get("description", entry["info"].get("description", "")),
         "title": entry["info"]["title"],
-        "start_seconds": datetime.timestamp(
-            datetime.combine(datetime.now().date(),
-            datetime.strptime(slot["start"], "%H:%M").time())
-        )
-    }
+        "start_seconds": datetime.timestamp(datetime.combine(today.date(), datetime.strptime(slot["start"], "%H:%M").time())),
+        "is_scene": False
+    })
 
-    filled_slots.append(selected_programme)
-
-    # Sla de lijst van afgespeelde afleveringen op
     slot["index"] = sorted(list(entry["played_episodes"]))
 
-# Wegschrijven van nieuwe indexen naar nmptv.json
-with open("nmptv.json", "w", encoding="utf-8") as f:
+# Save updated indexes back to config
+with open(config_file, "w", encoding="utf-8") as f:
     f.write(json.dumps(data, indent=2))
 
-# Playout-opbouw
+# Build playout commands
 previous_end_time = False
 command_output = []
 
+first_programme_slot = next((s for s in filled_slots if not s.get("is_scene")), None)
 command_output.append({"time": 0, "command": "PREVIEW", "scene": "Media 1"})
-if filled_slots:
-    command_output.append({"time": 0, "command": "LOAD", "url": filled_slots[0]["uri"]})
+if first_programme_slot:
+    command_output.append({"time": 0, "command": "LOAD", "url": first_programme_slot["uri"]})
 
 for slot_index, slot_info in enumerate(filled_slots):
+
+    # Scene slot
+    if slot_info.get("is_scene"):
+        scene_start_time = datetime.combine(today.date(), datetime.strptime(slot_info["start"], "%H:%M").time())
+        print(f"[SCENE] '{slot_info['scene']}' at {slot_info['start']}")
+        command_output += [
+            {"time": 0, "command": "PREVIEW", "scene": slot_info["scene"]},
+            {"time": datetime.timestamp(scene_start_time), "command": "PROGRAM", "scene": slot_info["scene"]}
+        ]
+        previous_end_time = scene_start_time
+        print("")
+        continue
+
+    # Programme slot
     if not previous_end_time:
-        programme_start_time = datetime.combine(datetime.now().date(), datetime.strptime(slot_info["start"], "%H:%M").time())
+        programme_start_time = datetime.combine(today.date(), datetime.strptime(slot_info["start"], "%H:%M").time())
     else:
         programme_start_time = previous_end_time
 
@@ -149,11 +195,14 @@ for slot_index, slot_info in enumerate(filled_slots):
     command_output.append({"time": datetime.timestamp(programme_start_time), "command": "PROGRAM", "scene": "Media 1"})
 
     if previous_end_time:
-        print("Slip:", datetime.combine(datetime.now().date(), datetime.strptime(slot_info["start"], "%H:%M").time()) - programme_start_time)
+        print("Slip:", datetime.combine(today.date(), datetime.strptime(slot_info["start"], "%H:%M").time()) - programme_start_time)
 
-    if (slot_index + 1) < len(filled_slots):
-        slot_end_time = datetime.combine(datetime.now().date(), datetime.strptime(filled_slots[slot_index + 1]["start"], "%H:%M").time())
-        fill_time = (slot_end_time - programme_end_time)
+    # Find next programme slot for fill calculation
+    next_programme_slot = next((s for s in filled_slots[slot_index + 1:] if not s.get("is_scene")), None)
+
+    if next_programme_slot:
+        slot_end_time = datetime.combine(today.date(), datetime.strptime(next_programme_slot["start"], "%H:%M").time())
+        fill_time = slot_end_time - programme_end_time
         print("Time to fill:", fill_time)
 
         if fill_time > timedelta(seconds=400):
@@ -194,19 +243,20 @@ for slot_index, slot_info in enumerate(filled_slots):
 
         command_output += [
             {"time": 0, "command": "PREVIEW", "scene": "Media 1"},
-            {"time": 0, "command": "LOAD", "url": filled_slots[slot_index + 1]["uri"]}
+            {"time": 0, "command": "LOAD", "url": next_programme_slot["uri"]}
         ]
 
     print("")
 
 if filled_slots:
-    command_output.append({"time": datetime.timestamp(programme_end_time), "command": "PROGRAM", "scene": "Ident"})
-    command_output.append({"time": datetime.timestamp(programme_end_time) + 20, "command": "PROGRAM", "scene": "OS 1"})
+    last_programme = next((s for s in reversed(filled_slots) if not s.get("is_scene")), None)
+    if last_programme:
+        command_output.append({"time": datetime.timestamp(programme_end_time), "command": "PROGRAM", "scene": "Ident"})
+        command_output.append({"time": datetime.timestamp(programme_end_time) + 20, "command": "PROGRAM", "scene": "OS 1"})
 
 with open("command_output.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(command_output, indent=2))
 
-# Toevoegen aan eindlijst voor volledigheid
 filled_slots.append({
     "duration": 43200,
     "start_seconds": 999999999999,
@@ -214,6 +264,7 @@ filled_slots.append({
     "description": "Items of news and information from Ceefax, with music."
 })
 
-# EPG wegschrijven
+# Write EPG (scene slots excluded as they have no fixed duration)
+epg_slots = [s for s in filled_slots if not s.get("is_scene")]
 with open("Y:/nmptv_epg.json", "w", encoding="utf-8") as f:
-    f.write(json.dumps(filled_slots, indent=2))
+    f.write(json.dumps(epg_slots, indent=2))
