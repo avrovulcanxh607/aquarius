@@ -76,6 +76,19 @@ if config_file == "nmptv.json":
 
 data = base_data if config_file == "nmptv.json" else json_load(config_file)
 
+# Load the other schedule files so we can sync indexes across all of them
+other_configs = {}
+for cfg_key in ["weekend_schedule", "christmas_schedule"]:
+    cfg = base_data.get(cfg_key, {})
+    cfg_file = cfg.get("config", "")
+    if cfg_file and cfg_file != config_file:
+        other_data = json_load(cfg_file)
+        if other_data:
+            other_configs[cfg_file] = other_data
+
+if config_file != "nmptv.json":
+    other_configs["nmptv.json"] = base_data
+
 # Backup
 with open(config_file + ".bak", "w", encoding="utf-8") as f:
     f.write(json.dumps(data, indent=2))
@@ -155,9 +168,36 @@ for slot in data["template"]:
 
     slot["index"] = sorted(list(entry["played_episodes"]))
 
-# Save updated indexes back to config
+# Save updated indexes back to active config
 with open(config_file, "w", encoding="utf-8") as f:
     f.write(json.dumps(data, indent=2))
+
+# Sync indexes to all other schedule files so they stay in lockstep
+for other_file, other_data in other_configs.items():
+    changed = False
+    # Build a lookup of show -> latest played indexes from the active schedule
+    active_indexes = {}
+    for slot in data["template"]:
+        if "list" in slot:
+            show = slot["list"][0]
+            if show not in active_indexes:
+                active_indexes[show] = set()
+            active_indexes[show].update(slot.get("index", []))
+
+    for other_slot in other_data.get("template", []):
+        if "list" not in other_slot:
+            continue
+        show = other_slot["list"][0]
+        if show in active_indexes:
+            new_index = sorted(list(active_indexes[show]))
+            if other_slot.get("index") != new_index:
+                other_slot["index"] = new_index
+                changed = True
+
+    if changed:
+        with open(other_file, "w", encoding="utf-8") as f:
+            f.write(json.dumps(other_data, indent=2))
+        print(f"Synced indexes to {other_file}")
 
 # Build playout commands
 previous_end_time = False
@@ -266,5 +306,5 @@ filled_slots.append({
 
 # Write EPG (scene slots excluded as they have no fixed duration)
 epg_slots = [s for s in filled_slots if not s.get("is_scene")]
-with open("Y:/nmptv_epg.json", "w", encoding="utf-8") as f:
+with open("Z:/intern/textbulletin/nmptv_epg.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(epg_slots, indent=2))
