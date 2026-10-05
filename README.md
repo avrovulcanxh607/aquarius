@@ -1,3 +1,7 @@
+# What's the rewrite branch?
+Like the name suggest the branch contains a rewrite of aquarius. The idea for the rewrite to work better with custom live events like sports, news etc...
+It's not recommended to use this branch until it is said otherwise.
+
 # Aquarius - Beginner's Guide
 *TV Playout Controller for OBS*
 
